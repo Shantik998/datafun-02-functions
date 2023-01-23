@@ -1,0 +1,44 @@
+
+
+==============================================================
+==============================================================
+
+ Welcome!
+
+ It's 2023-01-22 at 09:42 PM
+
+ This file is running on:    posix Darwin 21.4.0
+ 
+ The Python version is:      3.8.3
+ 
+ The Python interpreter is at: 
+ /Users/shantikandel/opt/anaconda3/bin/python
+
+ The active environment should be either conda OR pip (one should be None):
+
+     Active conda env is: base
+     Active pip env is:   None
+ 
+ The path to the active virtual environment is:
+
+ /Users/shantikandel/opt/anaconda3
+ 
+ The Current Working Directory (CWD) where this command was launched is:
+
+ /Users/shantikandel/datafun_project2/datafun-02-functions
+ 
+ The absolute path to the data directory is:
+
+ /Users/shantikandel/datafun_project2/datafun-02-functions/
+ 
+ The absolute path to this source directory is:
+
+ /Users/shantikandel/datafun_project2/datafun-02-functions
+ 
+ The absolute path to this file is:
+
+ /Users/shantikandel/datafun_project2/datafun-02-functions/about.py
+ 
+==============================================================
+==============================================================
+
