@@ -104,7 +104,9 @@ print(f'Variance: {variance}')
 stdev = stats.pstdev(scores)
 print(f'Standard deviation: {stdev}')
 
-# create and fit the linear regression model
+# create and fit the linear regression 
+from sklearn.linear_model import LinearRegression
+
 reg = LinearRegression()
 reg.fit(x_times.reshape(-1, 1), y_temps)
 
