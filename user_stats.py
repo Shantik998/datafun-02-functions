@@ -16,9 +16,10 @@ Uses only Python Standard Library module:
 
 """
 
-import statistics
 
+import statistics as stats
 # define a variable with some univariant data 
+
 # (one varabile, many readings)
 scores = [
     105,
@@ -78,3 +79,41 @@ scores = [
 # y is dependent on x (e.g. temperature vs hour of day)
 x_times = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 y_temps = [2, 5, 8, 20, 21, 23, 24, 27, 30, 31, 31,32]
+
+
+# Calculate the mean of the agility scores
+mean = stats.mean(scores)
+print(f'Mean: {mean}')
+
+# Calculate the median of the agility scores
+median = stats.median(scores)
+print(f'Median: {median}')
+
+# Calculate the mode of the agility scores
+try:
+    mode = stats.mode(scores)
+    print(f'Mode: {mode}')
+except stats.StatisticsError:
+    print("There is no mode")
+
+# Calculate the variance of the agility scores
+variance = stats.pvariance(scores)
+print(f'Variance: {variance}')
+
+# Calculate the standard deviation of the agility scores
+stdev = stats.pstdev(scores)
+print(f'Standard deviation: {stdev}')
+
+# create and fit the linear regression model
+reg = LinearRegression()
+reg.fit(x_times.reshape(-1, 1), y_temps)
+
+# calculate slope and intercept of best fit line 
+slope = reg.coef_
+intercept = reg.intercept_
+print(f'Slope: {slope}, Intercept: {intercept}')
+
+# predict future temperature
+x_future = 13
+y_future = reg.predict([[x_future]])
+print(f'Temperature at {x_future} hour: {y_future}')

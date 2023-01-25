@@ -30,7 +30,7 @@ def get_area_of_lot(length, width):
     # Use a try / except / finally block when something 
     # could go wrong
     try: 
-        area = lenth * width
+        area = length * width
         return area
     except Exception as ex:
         print(f"Error: {ex}")
@@ -101,7 +101,7 @@ if __name__ == "__main__":
     print()
     print(f"number of defect product produced per hour ={defect_product(4, 8, 12)}")
     print()
-    print(f"sales of products based on product size ={sales_of_product(12, 30, 32)}")
+    print(f"sales of products based on product size ={sales_of_product(12, 30, 32,200)}")
     print()
     print(f"revenue after deducting discount= {revenue_after_discount(22, 24, 26)}")
     print()
