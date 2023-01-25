@@ -23,7 +23,6 @@ class Species(Enum):
 # Notice what changes.
 
 
-@dataclass
 class PyBuddy:
     """PyBuddy data class for creating a study buddy."""
 
